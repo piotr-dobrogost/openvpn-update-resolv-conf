@@ -1,5 +1,9 @@
 #!/bin/bash
 #
+# If you have systemd 229 or newer the better option is to use
+# script from https://github.com/jonathanio/update-systemd-resolved
+# which uses DBus calls instead of creating temporary *.network files.
+#
 # Parses DHCP options from OpenVPN and creates a temporary systemd.network
 # configuration file with DNS settings, so they will be used by
 # systemd-resolved.
